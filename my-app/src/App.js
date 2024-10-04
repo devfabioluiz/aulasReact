@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import HelloWorld from './HelloWorld';
-import Saudacao from './Saudacao'
 import ComponenteFuncao from './ComponenteFuncao';
+import ComponenteClasse from './ComponenteClasse';
 
 const App = () => {
     return (
         <div>
+            <ComponenteClasse />
             <ComponenteFuncao nome="Fabio" />
         </div>
     );
