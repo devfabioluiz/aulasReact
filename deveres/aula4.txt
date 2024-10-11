@@ -1,0 +1,25 @@
+Faça um dos desafios propostos abaixo:
+
+Desafio 1
+Desafio: Sistema de Contagem Compartilhada
+Crie um pequeno sistema onde dois componentes interagem, um pai e um filho, para gerenciar uma contagem. O pai mantém o estado da contagem e o filho exibe esse valor e permite ao usuário incrementar ou decrementar a contagem.
+Requisitos:
+useState no componente pai para armazenar o valor da contagem.
+useEffect no componente filho para exibir um log sempre que o valor da contagem mudar.
+O filho deve ter dois botões: um para incrementar e outro para decrementar a contagem, que devem alterar o estado no pai.
+Utilize PropTypes no filho para garantir que o valor da contagem e as funções de incremento/decremento sejam passados corretamente.
+Objetivos:
+O pai controla o estado e passa as funções e o valor da contagem como props ao filho.
+O filho usa PropTypes para validar as props recebidas e, ao interagir, chama as funções passadas pelo pai.
+
+Desafio 2:
+Desafio: Lista de Tarefas com Sincronização
+Implemente um sistema onde o componente pai gerencia uma lista de tarefas, e o componente filho permite a adição de novas tarefas. Quando uma nova tarefa é adicionada, o componente pai deve exibir a lista atualizada.
+Requisitos:
+O useState no componente pai armazena a lista de tarefas.
+useEffect no componente pai para exibir um log no console sempre que a lista de tarefas for atualizada.
+O filho deve ter um campo de input e um botão para permitir ao usuário adicionar uma nova tarefa.
+As tarefas devem ser passadas como props do pai para o filho e validadas usando PropTypes.
+Objetivos:
+O pai controla a lista de tarefas e passa a função de adicionar tarefa para o filho como uma prop.
+O filho usa PropTypes para validar as props recebidas e adiciona novas tarefas, que são refletidas no pai.
