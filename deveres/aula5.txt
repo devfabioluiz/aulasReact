@@ -1,0 +1,4 @@
+1) Faça um componente chamado Grid que dentro dela receba o componente Personagem
+2) Estilize a grid conforme uma grid em CSS mesmo
+3) No componente Personagem faça um request fetch, tal como nos componentes da aula 5 do GitHub (GitHub.com/devfabioluiz/aulasReact/aula5) para a seguinte api: 'https://swapi.dev/api/'
+4) Dessa request, você precisará pegar as seguintes propriedades e mostrar no componente Personagem: 'name', 'height', 'mass', 'hair_color', 'skin_color'
