@@ -1,0 +1,1 @@
+Refatore o código da aula passada e faça conforme o componente ListaDeNomes, que se encontra na pasta componentes/Aula6, um map para que possa apresentar todos os personagens listados da apia
