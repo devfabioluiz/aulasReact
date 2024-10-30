@@ -1,0 +1,5 @@
+- ter um formulário conforme a aula de formulário na parte de contato que deve ficar no final da pagina
+- pagina nossos produtos home
+- remodelar a pagina da cariocasport.com.br
+- fazer um header e um footer
+- fazer um fetch API sobre o backend para a pagina nossos produtos, pode ser mock de sites de mock API

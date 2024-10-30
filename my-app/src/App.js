@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
-import Dogs from './components/Aula 5/Dogs'
-
+import React from "react";
+import { Provider } from "react-redux";
+import StyledButton from './components/Aula 7/StyledButton'
+import ProgressCircle from './components/Aula 7/ProgressCircle'
 const App = () => {
-    return (
-        <div>
-            {/* insira qualquer componente da pasta componentes aqui para testar a aplicacao */}
-            <Dogs />
-        </div>
-    );
-};
+  return (
+    // nota: nao esquecer de adicionar npm i redux-react
+    // este provider e Counter é explicado na Aula 7 - aula sobre Redux
+    // <Provider store={store}>
+    //   <Counter />
+    // </Provider>
 
-export default App;
+    // para a explicação da aula 7 - aula sobre material UI, pode acessar esse link: https://mui.com/material-ui/getting-started/installation/
+    <div>
+      <StyledButton />
+      <ProgressCircle />
+    </div>
+  );
+}
+
+export default App

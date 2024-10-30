@@ -1,0 +1,11 @@
+Dever de Casa:
+
+- Utilizar o dever de casa da aula passada, onde foi cobrado fazer um Map (uma lista) com os personagens que vem através do fetch API do mock API da stawarsapi. (Veja o dever de casa passado para entender)
+
+- Implementar o redux para uma pagina contabilizar toda vez que o usuário clica para ver os detalhes do personagem, ou seja, faça uma home que o usuário clique para acessar detalhes do personagem que vao aparecer na propria pagina, toda vez que ele clica nela, contabiliza uma visita e mostre na tela. Exemplo: Counter na pasta da aula 7.
+
+- implemente qualquer componente que queira do MaterialUI (Disponível no site: https://mui.com/material-ui/all-components/)
+
+- Coloque o CircularProgress do MaterialUI para renderizar enquanto os dados do personagem não aparecem.
+
+-Lembre-se como fazer este ultimo: usar o operador ?
