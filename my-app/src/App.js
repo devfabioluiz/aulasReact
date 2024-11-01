@@ -1,21 +1,31 @@
-import React from "react";
-import { Provider } from "react-redux";
-import StyledButton from './components/Aula 7/StyledButton'
-import ProgressCircle from './components/Aula 7/ProgressCircle'
-const App = () => {
-  return (
-    // nota: nao esquecer de adicionar npm i redux-react
-    // este provider e Counter é explicado na Aula 7 - aula sobre Redux
-    // <Provider store={store}>
-    //   <Counter />
-    // </Provider>
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate, Link } 
+from 'react-router-dom';
+import Home from './components/Aula 8/Home';
+import Users from './components/Aula 8/Users';
+import UserDetail from './components/Aula 8/UserDetail';
 
-    // para a explicação da aula 7 - aula sobre material UI, pode acessar esse link: https://mui.com/material-ui/getting-started/installation/
-    <div>
-      <StyledButton />
-      <ProgressCircle />
-    </div>
+function App() {
+  return (
+    <Router>
+      <div>
+        <nav>
+          <Link to="/">Home</Link> | <Link to="/users">Users</Link>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/users" element={<Users />}>
+            {/* Rota Aninhada - usando parametros na URL */}
+            <Route path=":userId" element={<UserDetail />} />
+          </Route>
+          {/* Redirecionamento em caso de rota vazia ou não
+          existente */}
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
-export default App
+export default App;
