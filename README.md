@@ -2,7 +2,7 @@ INSTRUÇÕES:
 
 Para o projeto que envolve todas as aulas, vá para my-app
 
-Para o projeto final que envolve o projeto esperado e o modelo a ser seguido, vá para o projeto-final
+Para o projeto final que envolve o projeto esperado e o modelo a ser seguido, vá para o trabalho-final
 
 Site a ser remodelado para o projeto final: https://www.cariocasport.com.br/
 
@@ -12,3 +12,5 @@ Site a ser remodelado para o projeto final: https://www.cariocasport.com.br/
 - remodelar a pagina da cariocasport.com.br
 - fazer um header e um footer
 - fazer um fetch API sobre o backend para a pagina nossos produtos, pode ser mock de sites de mock API
+
+Seguir a estrutura do projeto, as pastas e organização do codigo conforme o modelo neste repositorio chamado trabalho-final
