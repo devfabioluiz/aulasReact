@@ -1,14 +1,18 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-
-//exemplo da lib react-responsive-carousel em
-// nao esqueca de instalar a lib: https://www.npmjs.com/package/react-responsive-carousel
+import CarouselComponent from "./CarouselComponent";
+import React from 'react';
+import '../Aula 10/style.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import { Carousel as ResponsiveCarousel } from 'react-responsive-carousel';
+import Imagem from './camisa-de-time.jpg'
+import Imagem2 from './camisa-de-time2.jpg'
+import Imagem3 from './camisa-de-time3.jfif'
 
 const CarouselContainer = () => {
+
   return (
-    <div>
-      <Carousel
+    <div className='box_banner'>
+      <ResponsiveCarousel
         infiniteLoop={true}
         autoPlay={true}
         showStatus={false}
@@ -17,23 +21,19 @@ const CarouselContainer = () => {
         interval={5000}
       >
         <div>
-          <h1>Hello</h1>
-          <img src="https://images.unsplash.com/photo-1593642532009-6ba71e22f468?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1738&q=80" />
-          {/* <p className="legend">Legend 1</p> */}
+          <img src={Imagem} alt="Slide 1" />
         </div>
         <div>
-          <img src="https://images.unsplash.com/photo-1593642532009-6ba71e22f468?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1738&q=80" />
-          {/* <p className="legend">Legend 2</p> */}
+          <img src={Imagem2} alt="Slide 2" />
         </div>
         <div>
-          <img src="https://images.unsplash.com/photo-1593642532009-6ba71e22f468?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1738&q=80" />
-          {/* <p className="legend">Legend 3</p> */}
+          <img src={Imagem3} alt="Slide 3" />
         </div>
-      </Carousel>
+      </ResponsiveCarousel>
       <h1>Hello StackBlitz!</h1>
       <p>Start editing to see some magic happen :)</p>
     </div>
   );
-};
+}
 
 export default CarouselContainer;
