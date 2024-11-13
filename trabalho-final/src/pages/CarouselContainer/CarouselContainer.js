@@ -1,15 +1,14 @@
 import React from "react";
-import '../components/CarouselContainer/CarouselContainer.css';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Carousel as ResponsiveCarousel } from 'react-responsive-carousel';
-import Imagem from '.../public/assets/camisa-de-time.jpg';
-import Imagem2 from '.../public/assets/camisa-de-time2.jpg';
-import Imagem3 from '.../public/assets/camisa-de-time3.jfif';
+import "../CarouselContainer/CarouselContainer.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel as ResponsiveCarousel } from "react-responsive-carousel";
+import Imagem from "../../assets/camisa-de-time.jpg";
+import Imagem2 from "../../assets/camisa-de-time2.jpg";
+import Imagem3 from "../../assets/camisa-de-time3.jfif";
 
 const CarouselContainer = () => {
-
   return (
-    <div className='box_banner'>
+    <div className="box_banner">
       <ResponsiveCarousel
         infiniteLoop={true}
         autoPlay={true}
@@ -30,6 +29,6 @@ const CarouselContainer = () => {
       </ResponsiveCarousel>
     </div>
   );
-}
+};
 
 export default CarouselContainer;

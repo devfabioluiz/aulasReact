@@ -1,9 +1,8 @@
 import "./App.css";
-import Header from "./pages/Header";
-import Main from "./pages/Main";
-import CarouselContainer from "./pages/CarouselContainer";
-import Footer from "./pages/Footer";
-import Form from "./components/Form";
+import Footer from "./components/Footer/Footer";
+import Main from "./pages/Main/Main";
+import Header from "./components/Header/Header";
+import CarouselContainer from "./pages/CarouselContainer/CarouselContainer";
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
       <Header />
       <CarouselContainer />
       <Main />
-      <Form />
       <Footer />
     </>
   );

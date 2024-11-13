@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import logo from "./img/logo.webp";
+import logo from "../../assets/logo.webp";
 
 const Header = () => {
   return (
