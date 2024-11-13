@@ -1,10 +1,10 @@
 import React from "react";
-import '../Aula 10/style.css';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import '../components/CarouselContainer/CarouselContainer.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel as ResponsiveCarousel } from 'react-responsive-carousel';
-import Imagem from './camisa-de-time.jpg'
-import Imagem2 from './camisa-de-time2.jpg'
-import Imagem3 from './camisa-de-time3.jfif'
+import Imagem from '.../public/assets/camisa-de-time.jpg';
+import Imagem2 from '.../public/assets/camisa-de-time2.jpg';
+import Imagem3 from '.../public/assets/camisa-de-time3.jfif';
 
 const CarouselContainer = () => {
 
@@ -28,8 +28,6 @@ const CarouselContainer = () => {
           <img src={Imagem3} alt="Slide 3" />
         </div>
       </ResponsiveCarousel>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
     </div>
   );
 }
