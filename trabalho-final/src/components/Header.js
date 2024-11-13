@@ -1,7 +1,7 @@
-import React from 'react';
-import './Heade.css'
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import logo from './img/logo.webp';
+import React from "react";
+import "./Header.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import logo from "./img/logo.webp";
 
 const Header = () => {
   return (
@@ -11,10 +11,18 @@ const Header = () => {
           <img src={logo} alt="Carioca Logo" />
         </div>
         <div className="contacts">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-facebook"></i>
           </a>
           <span>21.9 9995-6202</span>
@@ -22,11 +30,21 @@ const Header = () => {
         </div>
       </div>
       <nav className="nav">
-        <a href="#simulador" className="nav-item active">Simulador</a>
-        <a href="#produtos" className="nav-item">Nossos Produtos</a>
-        <a href="#passo-a-passo" className="nav-item">Passo a Passo</a>
-        <a href="#portfolio" className="nav-item">Portfólio</a>
-        <a href="#contato" className="nav-item">Contato</a>
+        <a href="#simulador" className="nav-item active">
+          Simulador
+        </a>
+        <a href="#produtos" className="nav-item">
+          Nossos Produtos
+        </a>
+        <a href="#passo-a-passo" className="nav-item">
+          Passo a Passo
+        </a>
+        <a href="#portfolio" className="nav-item">
+          Portfólio
+        </a>
+        <a href="#contato" className="nav-item">
+          Contato
+        </a>
       </nav>
     </header>
   );
