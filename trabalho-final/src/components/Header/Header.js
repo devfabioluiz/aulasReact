@@ -25,7 +25,7 @@ const Header = () => {
           >
             <i className="fab fa-facebook"></i>
           </a>
-          <span>21.9 9995-6202</span>
+          <span>21.9 9995-6202 </span>
           <span>21.9 9995-3526</span>
         </div>
       </div>
