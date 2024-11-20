@@ -4,14 +4,23 @@
     align-items: end;
     height: 109.6px;
     padding-bottom: 5px;
+    height: 109.6px;
+    padding-bottom: 5px;
   }
   
   .header-top {
+    position: relative;
     position: relative;
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    height: 107.6px;
+    
+  }
+
+  .logo {
+    align-items: start;
     height: 107.6px;
     
   }
@@ -63,6 +72,15 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
+  } 
+
+  .nav {
+    display: flex;
+    gap: 15px;
+    align-self: flex-end; /* Alinha o nav ao fim (parte de baixo) da header-top */
+    margin-left: auto; /* Empurra o nav para a direita */
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário para posicionar mais para baixo */
+}
   } 
 
   .nav {
