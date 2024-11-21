@@ -1,53 +1,61 @@
 import React from "react";
+import { AppBar, Toolbar, Box, Typography, IconButton, Button, Link } from "@mui/material";
+import { Instagram, Facebook } from "@mui/icons-material";
 import "./Header.css";
+import "./HeaderStyles.js";
 import logo from "../../assets/logo.webp";
+import headerStyles from "./HeaderStyles.js";
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="header-top">
-        <div className="logo">
-          <img src={logo} alt="Carioca Logo" />
-        </div>
-        <div className="contacts">
-          <a
+    <AppBar className="header" sx={headerStyles.appBar}>
+      <Toolbar className="header-top" sx={headerStyles.toolbar}>
+        <Box className="logo" sx={headerStyles.logo}>
+          <img src={logo} alt="Carioca Logo"  />
+        </Box>
+
+        {/* Contatos e redes sociais */}
+        <Box className="contacts" sx={headerStyles.contacts}>
+          <IconButton
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-instagram"></i>
-          </a>
-          <a
+            <Instagram/>
+          </IconButton>
+          <IconButton
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-facebook"></i>
-          </a>
-          <span>21.9 9995-6202 </span>
-          <span>21.9 9995-3526</span>
-        </div>
-
-        <nav className="nav">
-          <a href="#simulador" className="nav-item active">
+            <Facebook/>
+          </IconButton>
+          <Typography variant="body2">21.9 9995-6202 </Typography>
+          <Typography variant="body2">21.9 9995-3526</Typography>
+        </Box>
+        {/*Navegação*/}
+        <Box className="nav" sx={headerStyles.nav}>
+          <Button href="#simulador" className="nav-item active" sx={headerStyles.navItem}>
             Simulador
-          </a>
-          <a href="#produtos" className="nav-item">
+          </Button>
+          <Button href="#produtos" className="nav-item" sx={headerStyles.navItem}>
             Nossos Produtos
-          </a>
-          <a href="#passo-a-passo" className="nav-item">
+          </Button>
+          <Button href="#passo-a-passo" className="nav-item" sx={headerStyles.navItem}>
             Passo a Passo
-          </a>
-          <a href="#portfolio" className="nav-item">
+          </Button>
+          <Button href="#portfolio" className="nav-item" sx={headerStyles.navItem}>
             Portfólio
-          </a>
-          <a href="#contato" className="nav-item">
+          </Button>
+          <Button href="#contato" className="nav-item" sx={headerStyles.navItem}>
             Contato
-          </a>
-        </nav>
-      </div>
+          </Button>
+        </Box>
+      </Toolbar>
 
-    </header>
+    </AppBar>
   );
 };
 
