@@ -16,8 +16,8 @@ const Cards = ({ image, description }) => {
         </Typography>
       </CardContent>
     </Card>
-  );
-};
+  ); 
+};  
 
 export default Cards;
  
