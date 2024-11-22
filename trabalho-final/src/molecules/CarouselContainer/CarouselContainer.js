@@ -1,5 +1,5 @@
 import React from "react";
-import "../CarouselContainer/CarouselContainer.css";
+import "./CarouselContainer.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel as ResponsiveCarousel } from "react-responsive-carousel";
 import Imagem from "../../assets/camisa-de-time.jpg";
