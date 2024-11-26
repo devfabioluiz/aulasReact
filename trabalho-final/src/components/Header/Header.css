@@ -4,12 +4,9 @@
     align-items: end;
     height: 109.6px;
     padding-bottom: 5px;
-    height: 109.6px;
-    padding-bottom: 5px;
   }
   
   .header-top {
-    position: relative;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -81,7 +78,7 @@
     margin-left: auto; /* Empurra o nav para a direita */
     margin-bottom: 10px; /* Ajuste o valor conforme necessário para posicionar mais para baixo */
 }
-  } 
+  
 
   .nav {
     display: flex;

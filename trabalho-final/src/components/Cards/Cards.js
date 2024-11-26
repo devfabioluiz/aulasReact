@@ -1,35 +1,17 @@
-import React from "react";
-
-const conjuntoUniforme = [
-    {
-        id: 1 ,
-        cor: "azul" ,
-        descricao: "" ,
-        url: "https://raw.githubusercontent.com/xfiveco/mock-api-images/main/images/img-01-xs.jpg",
-    },
-    {
-        id: 2,
-        cor: "branco" ,
-        descricao: "" ,
-        url: "https://raw.githubusercontent.com/xfiveco/mock-api-images/main/images/img-01-xs.jpg",
-      },
-      {
-        id: 3,
-        cor: "preto" ,
-        descricao: "" ,
-        url: "https://raw.githubusercontent.com/xfiveco/mock-api-images/main/images/img-01-xs.jpg",
-      },
-
-];
-
-const Card = () => {
-    return (
-      <>
-        {conjuntoUniforme.map((uniforme) => (
-          <img src={uniforme.url} />
-        ))}
-      </>
-    );
-  };
-
-  export default Card;
+const Cards = ({ image, description }) => {
+  return (
+    <Card sx={{ maxWidth: 345, margin: "1rem auto", boxShadow: 3 }}>
+      <CardMedia
+        component="img"
+        height="200"
+        image={image}
+        alt="Card Image"
+      />
+      <CardContent>
+        <Typography variant="body1" color="text.primary">
+          {description}
+        </Typography>
+      </CardContent>
+    </Card>
+  ); 
+};  

@@ -2,13 +2,15 @@
 
 const headerStyles = {
     appBar: {
-    background: "#dcdcdc",
+    background: "#333333",
       display: "flex",
       flexDirection: "column",
       alignItems: "flex-end",
       height: "109.6px",
       paddingBottom: "5px",
-        borderBottom: "1px solid #ccc",
+      borderBottom: "1px solid #ccc",
+      
+      
     },
 
     toolbar: {
@@ -19,6 +21,7 @@ const headerStyles = {
       width: "100%",
       alignItems: "center",
       height: "107.6px",
+      
     },
 
     logo: {
@@ -59,6 +62,7 @@ const headerStyles = {
       color: "#333",
       textDecoration: "none",
       fontWeight: "bold",
+      color: '#edeef1',
       fontSize: "14px",
       "&.active": {
         color: "red",
