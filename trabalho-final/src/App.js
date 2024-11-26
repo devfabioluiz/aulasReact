@@ -1,10 +1,10 @@
 import "./App.css";
 import Footer from "./components/Footer/Footer.js";
 import Header from "./components/Header/Header";
-import CarouselContainer from "./pages/CarouselContainer/CarouselContainer";
+import CarouselContainer from "./molecules/CarouselContainer/CarouselContainer";
 import './components/Grid/Grid.js';
 import GridExemplo from "./components/Grid/Grid.js";
-import Main from "./pages/Main/Main.js";
+import Main from "./molecules/Main/Main.js";
 
 
 function App() {
