@@ -18,12 +18,26 @@
 
   .logo {
     align-items: start;
+    height: 107.6px;
+    
+  }
+
+  .logo {
+    align-items: start;
   }
   
   .logo img {
     height: 60px; /* Ajuste o tamanho conforme necessário */
   }
-
+  /*
+  .contacts {
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+    gap: 15px;
+    margin-top: 10px;
+  }
+    */
 
     .contacts {
       position: absolute;
@@ -41,7 +55,15 @@
   .contacts i {
     font-size: 1.2em;
   }
-
+  
+  /*
+  .nav {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+  }
+    */
+  
   .nav-item {
     color: #333;
     text-decoration: none;
@@ -57,7 +79,17 @@
     margin-bottom: 10px; /* Ajuste o valor conforme necessário para posicionar mais para baixo */
 }
   
+
+  .nav {
+    display: flex;
+    gap: 15px;
+    align-self: flex-end; /* Alinha o nav ao fim (parte de baixo) da header-top */
+    margin-left: auto; /* Empurra o nav para a direita */
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário para posicionar mais para baixo */
+}
+  
   .nav-item.active {
     color: red;
+    --AppBar-background: #dcdcdc;
   }
   

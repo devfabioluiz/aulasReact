@@ -23,16 +23,16 @@ const GridStyles = {
       },
     },
     image: {
-      borderRadius: '4px', // Arredondamento leve da imagem
-      objectFit: 'cover', // Faz a imagem preencher o espaço corretamente
+      borderRadius: '4px', // Arredonda um pouco as bordas
+      objectFit: 'cover', // descobr que melhora o preenchimento da imagem
       width: '100%',
-      height: '140px', // Altura fixa definida
+      height: '140px', // Altura fixada
     },
     title: {
       marginTop: '8px',
       fontWeight: 'bold',
       textAlign: 'center', // Centraliza o título
-      color: '#edeef1', // Cor do texto (ajustada para #edeef1)
+      color: '#edeef1', // Cor do texto
     },
   };
   

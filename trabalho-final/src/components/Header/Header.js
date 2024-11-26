@@ -1,17 +1,16 @@
 import React from "react";
 import { AppBar, Toolbar, Box, Typography, IconButton, Button, Link } from "@mui/material";
 import { Instagram, Facebook } from "@mui/icons-material";
-import "./Header.css";
-import "./HeaderStyles.js";
+import "./Header.css"; // Import your CSS file once
+import headerStyles from "./HeaderStyles.js"; // Import your custom styles
 import logo from "../../assets/logo.webp";
-import headerStyles from "./HeaderStyles.js";
 
 const Header = () => {
   return (
     <AppBar className="header" sx={headerStyles.appBar}>
       <Toolbar className="header-top" sx={headerStyles.toolbar}>
         <Box className="logo" sx={headerStyles.logo}>
-          <img src={logo} alt="Carioca Logo"  />
+          <img src={logo} alt="Carioca Logo" />
         </Box>
 
         {/* Contatos e redes sociais */}
@@ -21,21 +20,20 @@ const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fab fa-instagram"></i>
-            <Instagram/>
+            <Instagram />
           </IconButton>
           <IconButton
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fab fa-facebook"></i>
-            <Facebook/>
+            <Facebook />
           </IconButton>
           <Typography variant="body2">21.9 9995-6202 </Typography>
           <Typography variant="body2">21.9 9995-3526</Typography>
         </Box>
-        {/*Navegação*/}
+
+        {/* Navegação */}
         <Box className="nav" sx={headerStyles.nav}>
           <Button href="#simulador" className="nav-item active" sx={headerStyles.navItem}>
             Simulador
@@ -54,7 +52,6 @@ const Header = () => {
           </Button>
         </Box>
       </Toolbar>
-
     </AppBar>
   );
 };
