@@ -1,3 +1,6 @@
+import React from "react";
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+
 const Cards = ({ image, description }) => {
   return (
     <Card sx={{ maxWidth: 345, margin: "1rem auto", boxShadow: 3 }}>
@@ -15,3 +18,6 @@ const Cards = ({ image, description }) => {
     </Card>
   ); 
 };  
+
+export default Cards;
+ 
