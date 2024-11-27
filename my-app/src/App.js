@@ -1,13 +1,11 @@
 // App.js
 import React from "react";
-import StyledButton from "./components/Aula 9/StyledButton";
-import StyledCard from "./components/Aula 9/StyledCard";
-import ExampleMockApi from "./components/Aula 9/ExampleMockApi";
+import SaudacaoComProps from "./components/Aula 2/SaudacaoComProps";
 
 const App = () => {
   return (
     <>
-      <ExampleMockApi />
+      <SaudacaoComProps nome="Fabio" />
     </>
   );
 };
