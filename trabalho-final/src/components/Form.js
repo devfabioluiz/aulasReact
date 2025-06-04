@@ -1,10 +1,17 @@
-import React from 'react';
-import { Container, TextField, Button, Box, Typography, Grid } from '@mui/material';
+import React from "react";
+import {
+  Container,
+  TextField,
+  Button,
+  Box,
+  Typography,
+  Grid,
+} from "@mui/material";
 
-function FormularioContato() {
+const FormularioContato = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Formulário enviado!');
+    console.log("Formulário enviado!");
   };
 
   return (
@@ -16,7 +23,8 @@ function FormularioContato() {
               Formulário de Contato
             </Typography>
             <Typography variant="body1" component="p">
-              Preencha os dados ao lado. Em breve um de nossos atendentes irá entrar em contato.
+              Preencha os dados ao lado. Em breve um de nossos atendentes irá
+              entrar em contato.
             </Typography>
           </Grid>
           <Grid item xs={12} md={8}>
@@ -73,6 +81,6 @@ function FormularioContato() {
       </Box>
     </Container>
   );
-}
+};
 
 export default FormularioContato;

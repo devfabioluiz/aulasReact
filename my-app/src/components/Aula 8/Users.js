@@ -1,12 +1,12 @@
 // components/Users.js
-import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
 
-function Users() {
+const Users = () => {
   const users = [
-    { id: 1, name: 'Alice' },
-    { id: 2, name: 'Bob' },
-    { id: 3, name: 'Charlie' },
+    { id: 1, name: "Alice" },
+    { id: 2, name: "Bob" },
+    { id: 3, name: "Charlie" },
   ];
 
   return (
@@ -24,6 +24,6 @@ function Users() {
       <Outlet />
     </div>
   );
-}
+};
 
 export default Users;
