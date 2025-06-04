@@ -7,7 +7,7 @@ function Dogs() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://dog.ceo/api/br3eeds/image/random")
+    fetch("https://dog.ceo/api/breeds/image/random")
       .then((response) => response.json()) // processa a resposta e transforma em formato JSON
       .then((data) => {
         setDogImage(data.message); // usa os dados e configura o estado para receber o data.message da requisição da API
